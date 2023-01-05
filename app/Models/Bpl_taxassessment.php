@@ -34,7 +34,7 @@ class Bpl_taxassessment extends Model
     protected $table = 'bpl_taxassessment';
 
     public static function getAll(){
-        return Bpl_taxassessment::select('BusinessID as refID', 'BusinessID as business_profiles_id', 'AssessmentDate as assessment_date', 'YearID as assessment_year', 'Remarks as remarks', 'DateTimeCreated as created_at', 'DateTimeModified as updated_at')->get()->toArray();
+        return Bpl_taxassessment::select('BusinessID as refID', 'BusinessID as business_profiles_id', 'AssessmentDate as assessment_date', 'YearID as assessment_year', 'Remarks as remarks', 'DateTimeCreated as created_at', 'DateTimeModified as updated_at', 'Frequency as payment_type')->get()->toArray();
     }
 
 }

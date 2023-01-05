@@ -31,13 +31,14 @@ class MigratorController extends BaseController
                 'assessment_date' => $taxes[$i]['assessment_date'],
                 'assessment_year' => $taxes[$i]['assessment_year'],
                 'remarks' => $taxes[$i]['remarks'],
+                'payment_type' => $taxes[$i]['payment_type'],
                 'created_at' => $taxes[$i]['created_at'],
-                'updated_at' => $taxes[$i]['updated_at']              
+                'updated_at' => $taxes[$i]['updated_at']
             ];
             Buss_tax_assessments::insert($insert_data);
             $insert_data = [];
         }
 
-        // return response()->json(['name' => 'Abigail', 'state' => 'CA']);
+        // return response()->json([]);
     }
 }
