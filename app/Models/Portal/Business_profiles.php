@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Laravel\Lumen\Auth\Authorizable;
 use Ramsey\Uuid\Uuid as PackageUuid;
 
-class Buss_tax_assessments extends Model
+class Business_profiles extends Model
 {
     protected $connection = 'mysql2';
     protected $primaryKey = 'id';
@@ -37,6 +37,6 @@ class Buss_tax_assessments extends Model
     //     'password',
     // ];
 
-    protected $table = 'buss_tax_assessments';
+    protected $table = 'business_profiles';
 
 }

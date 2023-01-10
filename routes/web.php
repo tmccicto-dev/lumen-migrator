@@ -17,4 +17,8 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/migrate_bpl_taxassessment', 'MigratorController@migrate_bpl_taxassessment');
+//bpl_taxassessment
+$router->get('/bpl_taxassessment/migrate', 'MigratorController@bpl_taxassessment');
+
+//bpl_business_profile
+$router->get('/bpl_business_profile/migrate', 'MigratorController@bpl_business_profile');
